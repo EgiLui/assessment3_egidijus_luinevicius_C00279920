@@ -6,6 +6,27 @@
     src: url(MPLUS1p-Light.ttf)
 }
 
+/* Link style */
+a:link {
+    text-decoration: none;
+    color: #010101;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #010101;
+}
+
+a:hover {
+    text-decoration: none;
+    color: ;
+}
+
+a:active {
+    text-decoration: none;
+    color: #010101;
+}
+
 /* Body style */
 body {
     padding:0;
@@ -21,15 +42,65 @@ h1 {
     font-family: 'Playfair Display SC', serif;
     color: #010101;
     background-color: none;
-    padding: 10px 10px;
+    padding: 0px;
+    margin: 10px;
     text-align: center;
     font-weight: normal;
+    font-size: 23px;
 }
 
+/* Subheading style */
 h4 {
     font-family: 'M PLUS 1p', sans-serif;
     color: #010101;
     background-color: none;
-    padding: 10px 10px;
+    padding: 0px;
+    margin: 0px;
     text-align: center;
+    font-size: 12px;
+}
+
+/* Nav style */
+nav {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 12px;
+}
+
+.right_menu {
+    float: right;
+}
+
+.nav {
+    margin-top: 50px;
+}
+
+.home {
+    padding-left: 30px;
+    margin-right: 90px;
+    float: left;
+}
+
+.roastery {
+    float: left;
+    margin-right: 90px;
+}
+
+.about {
+    float: left;
+    margin-right: 90px;
+}
+
+.shop {
+    float: left;
+    margin-right: 90px;
+}
+
+.wholesale {
+    float: left;
+    margin-right: 90px;
+}
+
+.contact {
+    float: left;
+    padding-right: 30px;
 }
