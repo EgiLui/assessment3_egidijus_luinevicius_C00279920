@@ -19,7 +19,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: ;
+    color: #9C0F48;
 }
 
 a:active {
@@ -70,7 +70,7 @@ nav {
     float: right;
 }
 
-.nav {
+.wrapper {
     margin-top: 50px;
 }
 
@@ -103,4 +103,14 @@ nav {
 .contact {
     float: left;
     padding-right: 30px;
+}
+
+/* Footer style */
+footer {
+    position: fixed;
+    height: 471px;
+    background-color: #F9E4D4;
+    bottom: 0;
+    width: 100%;
+    
 }
