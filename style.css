@@ -1,0 +1,35 @@
+/* General font style */
+@font-face {
+    font-family: 'Playfair Display SC', serif;
+    src: url(PlayfairDisplaySC-Regular.ttf);
+    font-family: 'M PLUS 1p', sans-serif;
+    src: url(MPLUS1p-Light.ttf)
+}
+
+/* Body style */
+body {
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Main heading style */
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-weight: normal;
+}
+
+h4 {
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #010101;
+    background-color: none;
+    padding: 10px 10px;
+    text-align: center;
+}
