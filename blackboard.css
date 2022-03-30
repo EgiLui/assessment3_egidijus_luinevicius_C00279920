@@ -5,6 +5,15 @@
     font-family: 'M PLUS 1p', sans-serif;
     src: url(MPLUS1p-Light.ttf)
 }
+/* Page container and content style */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+#content-wrap {
+    padding-bottom: 1000px;
+  }
 
 /* Link style */
 a:link {
@@ -27,11 +36,14 @@ a:active {
     color: #010101;
 }
 
-/* Body style */
-body {
+/* index.html body style */
+#index {
     padding:0;
     margin:0;
     font-family: sans-serif;
+    background-image: url("images/aesthetic_coffee.jpeg");
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -43,7 +55,7 @@ h1 {
     color: #010101;
     background-color: none;
     padding: 0px;
-    margin: 10px;
+    margin-top: 30px;
     text-align: center;
     font-weight: normal;
     font-size: 23px;
@@ -66,43 +78,25 @@ nav {
     font-size: 12px;
 }
 
-.right_menu {
-    float: right;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.wrapper {
-    margin-top: 50px;
+.nav-row {
+    width: 100%;
+    padding: 60px 30px 60px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.home {
-    padding-left: 30px;
-    margin-right: 90px;
-    float: left;
-}
-
-.roastery {
-    float: left;
-    margin-right: 90px;
-}
-
-.about {
-    float: left;
-    margin-right: 90px;
-}
-
-.shop {
-    float: left;
-    margin-right: 90px;
-}
-
-.wholesale {
-    float: left;
-    margin-right: 90px;
-}
-
-.contact {
-    float: left;
-    padding-right: 30px;
+.nav-row h5 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 12px;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 /* Footer style */
@@ -124,7 +118,7 @@ nav {
 
 ul {
     font-family: 'M PLUS 1p', sans-serif;
-    font-size: 10px;
+    font-size: 11px;
     list-style: none;
     line-height: 3;
 }
@@ -132,6 +126,9 @@ ul {
 .footer {
     background-color: #F9E4D4;
     padding: 70px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-col {
@@ -161,7 +158,8 @@ ul {
     margin: 0px 10px 10px 0px;
 }
 
-@media(max-width: 767px) {
+/* Responsive style */
+@media(max-width: 600px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;

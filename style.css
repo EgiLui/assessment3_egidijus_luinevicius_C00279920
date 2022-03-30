@@ -49,6 +49,14 @@ a:active {
     position: relative;
 }
 
+/* about.html body style */
+#about {
+    padding:0;
+    margin:0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 13px;
+}
+
 /* Main heading style */
 h1 {
     font-family: 'Playfair Display SC', serif;
@@ -58,7 +66,7 @@ h1 {
     margin-top: 30px;
     text-align: center;
     font-weight: normal;
-    font-size: 23px;
+    font-size: 24px;
 }
 
 /* Subheading style */
@@ -69,21 +77,10 @@ h4 {
     padding: 0px;
     margin: 0px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 /* Nav style */
-nav {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 12px;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .nav-row {
     width: 100%;
     padding: 60px 30px 60px 30px;
@@ -94,9 +91,51 @@ nav {
 
 .nav-row h5 {
     font-family: 'M PLUS 1p', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 30px;
     position: relative;
+}
+
+/* about.html content style */
+.about_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about_heading {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding-bottom: 30px;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#about_txt1 {
+    width: 393px;
+    height: 429px;
+    padding: 30px 30px 60px 30px;
+    
+}
+
+#about_pic1 {
+    width: 887px;
+    height: 485px;
+    
+    padding-left: 200px;
+}
+
+#about_txt2 {
+    padding: 30px 30px 60px 30px;
+    
+}
+
+#about_pic2 {
+    width: 887px;
+    height: 485px;
+    
 }
 
 /* Footer style */
@@ -118,7 +157,7 @@ nav {
 
 ul {
     font-family: 'M PLUS 1p', sans-serif;
-    font-size: 11px;
+    font-size: 13px;
     list-style: none;
     line-height: 3;
 }
@@ -138,7 +177,7 @@ ul {
 
 .footer-col h5 {
     font-family: 'M PLUS 1p', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 30px;
     position: relative;
 }
@@ -159,9 +198,22 @@ ul {
 }
 
 /* Responsive style */
-@media(max-width: 600px) {
+@media(max-width: 700px) {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    .nav-row {
+        width: 30%;
+        margin-bottom: 30px;
+        justify-content: center;
+        text-align: center;
+        padding-left: 50%;
+    }
+
+    .nav-row h5 {
+        background-color: #fff;
+        border-radius: 5%;
     }
 }
