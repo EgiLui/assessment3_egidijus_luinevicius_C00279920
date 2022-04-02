@@ -12,7 +12,7 @@
   }
   
 #content-wrap {
-    padding-bottom: 1000px;
+    padding-bottom: 70%;
   }
 
 /* Link style */
@@ -49,8 +49,16 @@ a:active {
     position: relative;
 }
 
-/* about.html body style */
-#about {
+/* roastery.html body style */
+#roastery {
+    padding:0;
+    margin:0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 13px;
+}
+
+/* about_us.html body style */
+#about_us {
     padding:0;
     margin:0;
     font-family: 'M PLUS 1p', sans-serif;
@@ -96,13 +104,17 @@ h4 {
     position: relative;
 }
 
-/* about.html content style */
-.about_wrapper {
+/* roastery.html, about.html content style */
+.roastery_wrapper, .about_wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
 }
 
-#about_heading {
+#roastery_heading, #about_heading {
     font-family: 'Playfair Display SC', serif;
     color: #010101;
     background-color: none;
@@ -110,32 +122,35 @@ h4 {
     font-weight: normal;
     font-size: 24px;
     text-align: left;
-    padding-left: 30px;
 }
 
-#about_txt1 {
-    width: 393px;
-    height: 429px;
-    padding: 30px 30px 60px 30px;
-    
+#roastery_txt1, #about_txt1 {
+    width: 50%;
+    padding-bottom: 90px;
+}
+
+#roastery_pic1 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
 }
 
 #about_pic1 {
-    width: 887px;
-    height: 485px;
-    
-    padding-left: 200px;
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
 }
 
-#about_txt2 {
-    padding: 30px 30px 60px 30px;
-    
+#roastery_txt2, #about_txt2 {
+    width: 50%;
+    padding-bottom: 90px;
+    padding-top: 150px;
 }
 
-#about_pic2 {
-    width: 887px;
-    height: 485px;
-    
+#roastery_pic2, #about_pic2 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
 }
 
 /* Footer style */
@@ -146,7 +161,7 @@ h4 {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -182,7 +197,7 @@ ul {
     position: relative;
 }
 
-.footer-col ul li:not(:last-child){
+.footer-col ul li:not(:last-child) {
     margin-bottom: 10px;
 }
 
@@ -198,11 +213,7 @@ ul {
 }
 
 /* Responsive style */
-@media(max-width: 700px) {
-    .footer-col {
-        width: 50%;
-        margin-bottom: 30px;
-    }
+@media(max-width: 600px) {
 
     .nav-row {
         width: 30%;
@@ -215,5 +226,14 @@ ul {
     .nav-row h5 {
         background-color: #fff;
         border-radius: 5%;
+    }
+
+    .roastery_wrapper {
+        height: 600px; 
+    }
+      
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
     }
 }
