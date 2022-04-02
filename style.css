@@ -65,6 +65,80 @@ a:active {
     font-size: 13px;
 }
 
+/* order.html body style */
+#order {
+    padding:0;
+    margin:0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 13px;
+}
+
+/* Order form */
+h4 {
+    
+}
+
+#account {
+    padding: auto;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    width: 50%;
+    height: 50%;
+    padding: 15px;
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: #F9E4D4;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    vertical-align: top;
+    font-size: 12px;
+    color: #010101;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 500px;
+    font-size: 12px;
+    font-family: orbitron, sans-serif;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: solid #010101;
+    color: #fff;
+}
+
+input:focus {
+    border-bottom-color: #9f116a;
+    outline: none;
+    font-family: orbitron, sans-serif;
+}
+
+.button {
+    padding-left: 94px;
+}
+
+button {
+    width: 100px;
+    font-size: 12px;
+    background-color: #F9E4D4;
+    border: 1px solid #010101;
+    color: #010101;
+    margin-top: 10px;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
+button:hover {
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'M PLUS 1p', sans-serif;
+}
+
 /* Main heading style */
 h1 {
     font-family: 'Playfair Display SC', serif;
@@ -144,7 +218,7 @@ h4 {
 #roastery_txt2, #about_txt2 {
     width: 50%;
     padding-bottom: 90px;
-    padding-top: 150px;
+    padding-top: 90px;
 }
 
 #roastery_pic2, #about_pic2 {
