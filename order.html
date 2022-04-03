@@ -33,26 +33,30 @@
                 <h5><a href="contact.html">CONTACT</a></h5>
             </div>
             <!-- Order form -->
+            <h1 id="order-head">Order</h1>
             <div id="order_form">
-                <h1>Order</h1>
-                <form>
-                    <h4>Your invoice will be sent to your email or phone</h4>
-                    <div>
-                        <label for="name">Email: </label>
-                        <input type="text" id="name" name="user_name" placeholder="John Doe" required>
+                <form action="/action_page.php">
+                    <div class="input-container">
+                      <i class="fa fa-user icon"></i>
+                      <input class="input-field" type="text" placeholder="Username" name="usrnm">
                     </div>
-                    <div>
-                        <label for="mail">Phone: </label>
-                        <input type="email" id="mail" name="user_mail" placeholder="john_doe@example.com" required>
+                  
+                    <div class="input-container">
+                      <i class="fa fa-envelope icon"></i>
+                      <input class="input-field" type="text" placeholder="Email" name="email">
                     </div>
-                    <div>
-                        <div id="account">Create account for a faster checout</div>
-                        <input type="checkbox">
+                  
+                    <div class="input-container">
+                      <i class="fa fa-key icon"></i>
+                      <input class="input-field" type="password" placeholder="Password" name="psw">
                     </div>
-                    <div class="button">
-                        <button type="submit">Order</button>
-                    </div>
-                </form>
+
+                    <label>
+                        <input type="checkbox" name="subscribe"> Create account
+                      </label>
+                  
+                    <button class="btn"><a href="thank_you.html">Order</a></button>
+                  </form>
             </div>
         </div>
         <!-- Footer -->
