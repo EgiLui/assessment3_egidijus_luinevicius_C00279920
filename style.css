@@ -8,7 +8,6 @@
 /* Page container and content style */
 #page-container {
     position: relative;
-    min-height: 100vh;
   }
   
 #content-wrap {
@@ -28,7 +27,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
-    color: #9C0F48;
+    color: #FF1818;
 }
 
 a:active {
@@ -63,6 +62,74 @@ a:active {
     margin:0;
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 13px;
+}
+
+/* shop.html overlay */
+.overlay_head {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding: 0px;
+    margin-top: 90px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.img-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    align-content: center;
+}
+  
+.img-column {
+    flex: 100%;
+    max-width: 100%;
+}
+  
+.img-column img {
+    vertical-align: middle;
+}
+  
+.img-container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #fff;
+}
+  
+.img-container:hover .overlay {
+    opacity: 0.9;
+}
+  
+.text {
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #010101;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /* wholesale.html picture style */
@@ -326,7 +393,7 @@ ul {
         padding-left: 50%;
     }
 
-    .nav-row h5 {
+    #index .nav-row h5 {
         background-color: #F9E4D4;
         border-radius: 5%;
     }
@@ -338,5 +405,19 @@ ul {
     .footer-col {
         width: 50%;
         margin-bottom: 30px;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+}
+
+/* Desktop style for shop.html */
+@media only screen and (min-width: 1024px) {
+    .img-column {
+      flex: 33.3%;
+      max-width: 33.3%;
+      padding: 30px;
     }
 }
