@@ -94,7 +94,7 @@ a:active {
     font-size: 24px;
 }
 
-/* contact.html body style */
+/* contact.html body, form style */
 #contact {
     padding:0;
     margin:0;
@@ -103,7 +103,7 @@ a:active {
 }
 
 /* Order, wholesale form */
-#order_form, #wholesale_form {
+#order_form, #wholesale_form, #contact_form {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
@@ -112,7 +112,7 @@ a:active {
     padding-bottom: 30px;
 }
 
-#order-head {
+#order-head, #whole-head, #contact-head {
     font-family: 'Playfair Display SC', serif;
     color: #010101;
     background-color: none;
@@ -141,7 +141,7 @@ a:active {
 }
 
 /* Input fields style */
-.input-field {
+.input-field, textarea {
     width: 100%;
     padding: 10px;
     outline: none;
