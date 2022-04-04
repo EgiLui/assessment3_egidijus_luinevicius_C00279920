@@ -8,11 +8,50 @@
 /* Page container and content style */
 #page-container {
     position: relative;
-  }
+}
   
 #content-wrap {
     padding-bottom: 40%;
-  }
+}
+
+/* Main heading style */
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding: 0px;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/* Subheading style */
+h4 {
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #010101;
+    background-color: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Nav style */
+.nav-row {
+    width: 100%;
+    padding: 60px 30px 60px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nav-row h5 {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+    position: relative;
+}
 
 /* Link style */
 a:link {
@@ -48,23 +87,62 @@ a:active {
     position: relative;
 }
 
-/* roastery.html body style */
-#roastery {
+/* roastery.html, about.html content style */
+.roastery_wrapper, .about_wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* roastery.html body, content style */
+#roastery, #about_us {
     padding:0;
     margin:0;
     font-family: 'M PLUS 1p', sans-serif;
     font-size: 13px;
 }
 
-/* about_us.html body style */
-#about_us {
-    padding:0;
-    margin:0;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 13px;
+#roastery_heading, #about_heading {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding-bottom: 30px;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: left;
 }
 
-/* shop.html overlay */
+#roastery_txt1, #about_txt1 {
+    width: 50%;
+    padding-bottom: 90px;
+}
+
+#roastery_pic1, #about_pic1 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#roastery_txt2, #about_txt2 {
+    width: 50%;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+#roastery_pic2, #about_pic2 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* shop.html content + overlay */
 .overlay_head {
     font-family: 'Playfair Display SC', serif;
     color: #010101;
@@ -142,6 +220,88 @@ a:active {
     padding-right: 50px;
 }
 
+#order-head, #whole-head, #contact-head {
+    font-family: 'Playfair Display SC', serif;
+    color: #010101;
+    background-color: none;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+/* Order, wholesale, contact form style */
+#order_form, #wholesale_form, #contact_form {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: #F9E4D4;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.input-container {
+    display: flex;
+    width: 400px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: #F9E4D4;
+    color: #010101;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid #F9E4D4;
+}
+
+input[type=checkbox] {
+    margin-bottom: 16px;
+    margin-left: 50px;
+}
+
+label {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 14px;
+}
+
+.order-btn {
+    background-color: #F9E4D4;
+    color: #010101;
+    font-family: 'M PLUS 1p', sans-serif;
+    padding: 15px;
+    border: 1px solid #010101;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 29px;
+}
+
+.btn {
+    background-color: #F9E4D4;
+    color: #010101;
+    font-family: 'M PLUS 1p', sans-serif;
+    padding: 15px;
+    border: 1px solid #010101;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 110px;
+}
+
+.btn:hover {
+    background-color: #fff;
+}
+
 /* thank_you.html body style */
 #thank-you {
     padding:0;
@@ -159,180 +319,6 @@ a:active {
     text-align: center;
     font-weight: normal;
     font-size: 30px;
-}
-
-/* contact.html body */
-#contact {
-    padding:0;
-    margin:0;
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 13px;
-}
-
-/* Order, wholesale form */
-#order_form, #wholesale_form, #contact_form {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    background-color: #F9E4D4;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-#order-head, #whole-head, #contact-head {
-    font-family: 'Playfair Display SC', serif;
-    color: #010101;
-    background-color: none;
-    padding: 0px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 24px;
-}
-
-/* Input container style */
-.input-container {
-    display: flex;
-    width: 400px;
-    margin-bottom: 15px;
-}
-
-/* Form icon style */
-.icon {
-    padding: 10px;
-    background: #F9E4D4;
-    color: #010101;
-    min-width: 50px;
-    text-align: center;
-}
-
-/* Input fields style */
-.input-field, textarea {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-}
-
-.input-field:focus {
-    border: 2px solid #F9E4D4;
-}
-
-/* Checkbox style */
-input[type=checkbox] {
-    margin-bottom: 16px;
-    margin-left: 50px;
-}
-
-/* Order button style */
-.order-btn {
-    background-color: #F9E4D4;
-    color: #010101;
-    padding: 15px;
-    border: 1px solid #010101;
-    cursor: pointer;
-    width: 200px;
-    margin-left: 33px;
-}
-
-.btn {
-    background-color: #F9E4D4;
-    color: #010101;
-    padding: 15px;
-    border: 1px solid #010101;
-    cursor: pointer;
-    width: 200px;
-    margin-left: 110px;
-}
-
-.btn:hover {
-    background-color: #fff;
-}
-
-/* Main heading style */
-h1 {
-    font-family: 'Playfair Display SC', serif;
-    color: #010101;
-    background-color: none;
-    padding: 0px;
-    margin-top: 30px;
-    text-align: center;
-    font-weight: normal;
-    font-size: 24px;
-}
-
-/* Subheading style */
-h4 {
-    font-family: 'M PLUS 1p', sans-serif;
-    color: #010101;
-    background-color: none;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-    font-size: 14px;
-}
-
-/* Nav style */
-.nav-row {
-    width: 100%;
-    padding: 60px 30px 60px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.nav-row h5 {
-    font-family: 'M PLUS 1p', sans-serif;
-    font-size: 14px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-/* roastery.html, about.html content style */
-.roastery_wrapper, .about_wrapper {
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    margin: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#roastery_heading, #about_heading {
-    font-family: 'Playfair Display SC', serif;
-    color: #010101;
-    background-color: none;
-    padding-bottom: 30px;
-    font-weight: normal;
-    font-size: 24px;
-    text-align: left;
-}
-
-#roastery_txt1, #about_txt1 {
-    width: 50%;
-    padding-bottom: 90px;
-}
-
-#roastery_pic1, #about_pic1 {
-    background-repeat: no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#roastery_txt2, #about_txt2 {
-    width: 50%;
-    padding-bottom: 90px;
-    padding-top: 90px;
-}
-
-#roastery_pic2, #about_pic2 {
-    background-repeat: no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 /* Footer style */
@@ -406,10 +392,6 @@ ul {
         padding-left: 50%;
         background-color: #F9E4D4;
         padding: 5px;
-    }
-
-    #index .nav-row h5 {
-  
     }
 
     .roastery_wrapper {
