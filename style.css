@@ -158,7 +158,7 @@ a:active {
     margin-top: 150px;
     text-align: center;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 /* contact.html body */
@@ -221,9 +221,20 @@ a:active {
 /* Checkbox style */
 input[type=checkbox] {
     margin-bottom: 16px;
+    margin-left: 50px;
 }
 
 /* Order button style */
+.order-btn {
+    background-color: #F9E4D4;
+    color: #010101;
+    padding: 15px;
+    border: 1px solid #010101;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 33px;
+}
+
 .btn {
     background-color: #F9E4D4;
     color: #010101;
@@ -231,7 +242,7 @@ input[type=checkbox] {
     border: 1px solid #010101;
     cursor: pointer;
     width: 200px;
-    margin-left: 100px;
+    margin-left: 110px;
 }
 
 .btn:hover {
@@ -387,16 +398,18 @@ ul {
 @media(max-width: 600px) {
 
     .nav-row {
-        width: 30%;
+        width: 20%;
+        margin-top: 90px;
         margin-bottom: 30px;
         justify-content: center;
         text-align: center;
         padding-left: 50%;
+        background-color: #F9E4D4;
+        padding: 5px;
     }
 
     #index .nav-row h5 {
-        background-color: #F9E4D4;
-        border-radius: 5%;
+  
     }
 
     .roastery_wrapper {
