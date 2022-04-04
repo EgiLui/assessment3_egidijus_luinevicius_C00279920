@@ -11,7 +11,7 @@
   }
   
 #content-wrap {
-    padding-bottom: 70%;
+    padding-bottom: 40%;
   }
 
 /* Link style */
@@ -161,7 +161,7 @@ a:active {
     font-size: 24px;
 }
 
-/* contact.html body, form style */
+/* contact.html body */
 #contact {
     padding:0;
     margin:0;
@@ -194,7 +194,7 @@ a:active {
 /* Input container style */
 .input-container {
     display: flex;
-    width: 100%;
+    width: 400px;
     margin-bottom: 15px;
 }
 
@@ -230,7 +230,8 @@ input[type=checkbox] {
     padding: 15px;
     border: 1px solid #010101;
     cursor: pointer;
-    width: 100%;
+    width: 200px;
+    margin-left: 100px;
 }
 
 .btn:hover {
@@ -350,7 +351,7 @@ ul {
 .footer {
     background-color: #F9E4D4;
     padding: 70px 0;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
