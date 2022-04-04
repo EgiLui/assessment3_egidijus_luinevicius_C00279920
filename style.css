@@ -97,7 +97,7 @@ a:active {
     flex-wrap: wrap;
 }
 
-/* roastery.html body, content style */
+/* roastery.html, about.html body, content style */
 #roastery, #about_us {
     padding:0;
     margin:0;
@@ -116,11 +116,11 @@ a:active {
 }
 
 #roastery_txt1, #about_txt1 {
-    width: 50%;
+    width: 100%;
     padding-bottom: 90px;
 }
 
-#roastery_pic1, #about_pic1 {
+#roastery_pic1 {
     background-repeat: no-repeat center center;
     background-size: cover;
     width: 100%;
@@ -128,18 +128,42 @@ a:active {
     padding-right: 50px;
 }
 
-#roastery_txt2, #about_txt2 {
+#about_pic1 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 70%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 10%;
+}
+
+#roastery_txt2 {
     width: 50%;
     padding-bottom: 90px;
     padding-top: 90px;
 }
 
-#roastery_pic2, #about_pic2 {
+#about_txt2 {
+    width: 100%;
+    padding-bottom: 90px;
+    padding-top: 90px;
+}
+
+#about_pic2 {
     background-repeat: no-repeat center center;
     background-size: cover;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+#roastery_pic2 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 5%;
 }
 
 /* shop.html content + overlay */
@@ -214,10 +238,11 @@ a:active {
 #wholesale_pic {
     background-repeat: no-repeat center center;
     background-size: cover;
-    width: 100%;
+    width: 85%;
     padding-top: 200px;
     padding-left: 50px;
     padding-right: 50px;
+    margin-left: 7%;
 }
 
 #order-head, #whole-head, #contact-head {
