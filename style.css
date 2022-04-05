@@ -115,17 +115,22 @@ a:active {
     text-align: left;
 }
 
-#roastery_txt1, #about_txt1 {
-    width: 100%;
-    padding-bottom: 90px;
-}
-
 #roastery_pic1 {
     background-repeat: no-repeat center center;
     background-size: cover;
-    width: 100%;
+    width: 90%;
     padding-left: 50px;
     padding-right: 50px;
+    margin-left: 5%;
+}
+
+#roastery_pic2 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 90%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 5%;
 }
 
 #about_pic1 {
@@ -135,6 +140,19 @@ a:active {
     padding-left: 50px;
     padding-right: 50px;
     margin-left: 10%;
+}
+
+#about_pic2 {
+    background-repeat: no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#roastery_txt1, #about_txt1 {
+    width: 100%;
+    padding-bottom: 90px;
 }
 
 #roastery_txt2 {
@@ -147,23 +165,6 @@ a:active {
     width: 100%;
     padding-bottom: 90px;
     padding-top: 90px;
-}
-
-#about_pic2 {
-    background-repeat: no-repeat center center;
-    background-size: cover;
-    width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-#roastery_pic2 {
-    background-repeat: no-repeat center center;
-    background-size: cover;
-    width: 90%;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 5%;
 }
 
 /* shop.html content + overlay */
