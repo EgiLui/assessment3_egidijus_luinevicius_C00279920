@@ -5,7 +5,7 @@
     font-family: 'M PLUS 1p', sans-serif;
     src: url(MPLUS1p-Light.ttf)
 }
-/* Page container and content style */
+/* General style */
 #page-container {
     position: relative;
 }
@@ -181,7 +181,7 @@ a:active {
 .img-row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 0px;
     align-content: center;
 }
   
